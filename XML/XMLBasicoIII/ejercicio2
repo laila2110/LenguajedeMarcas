@@ -1,0 +1,22 @@
+<html>
+ <head><title>Book Review</title></head>
+ <body>
+ <div class="book review">
+ <h2>Introducción a XML</h2>
+ <table border="1">
+ <tr align="center">
+ <th>Author</th>
+ <th>Price</th>
+ <th>Pages</th>
+ <th>Date</th>
+ </tr>
+ <tr align="left">
+ <td>Simon St. Laurent</td>
+ <td>31.98</td>
+ <td>352</td>
+ <td>1998/01</td>
+ </tr>
+ </table>
+ </div>
+ </body>
+</html>
