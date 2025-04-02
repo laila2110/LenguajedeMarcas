@@ -1,0 +1,33 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+<factura numero="F12345" fecha="2025-04-01">
+    <datos-emisor>
+        <nombre>Librería Central</nombre>
+        <cif>LC12345678</cif>
+        <telefono>912345678</telefono>
+    </datos-emisor>
+    <datos-cliente>
+        <nombre>Biblioteca Pública</nombre>
+        <cif>BP87654321</cif>
+        <telefono>987654321</telefono>
+    </datos-cliente>
+    <detalle-factura importe="150.00">
+        <linea codigo-articulo="A001" tipo="Libro">
+            <descripcion>Introducción a XML</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>35.00</pvp>
+            <oferta/>
+        </linea>
+        <linea codigo-articulo="A002" tipo="DVD">
+            <descripcion>Historia del cine</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>50.00</pvp>
+        </linea>
+    </detalle-factura>
+</factura>
