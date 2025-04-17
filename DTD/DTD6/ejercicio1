@@ -1,0 +1,14 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona
+    nombre CDATA #IMPLIED
+    dni CDATA #REQUIRED>
+]>
+<persona dni="03141592E" />

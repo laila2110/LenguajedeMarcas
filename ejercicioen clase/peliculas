@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (directores, libros)>
+<!ELEMENT libro (libro)*>
+<!ELEMENT libro (#PCDATA)>
+<!ATTLIST libro coddir ID #REQUIRED>
+<!ELEMENT escritores (escritor)*>
+<!ELEMENT escritor (#PCDATA)>
+<!ATTLIST escritor direccion IDREF #REQUIRED>
+]>
+
+<biblioteca>
+ <libros>
+  <libro coddir="CE">Nosotros en la luna</libro>
+  <libro coddir="JC">todo lo que nunca fuimos</libro>
+ </libros>
+ <escritores>
+  <escritor direccion="CE">allice keler</pelicula>
+  <escritor direccion="JC">allice keller</pelicula>
+ </escritores>
+</biblioteca>

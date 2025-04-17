@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Cantidad entre 0 y 1000 -->
+  <xs:simpleType name="tipoCantidad">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo de helado -->
+  <xs:complexType name="tipoHelado">
+    <xs:choice>
+      <xs:element name="chocolate" type="tipoCantidad"/>
+      <xs:element name="fresa" type="tipoCantidad"/>
+    </xs:choice>
+    <xs:choice>
+      <xs:element name="vainilla" type="tipoCantidad"/>
+      <xs:element name="turron" type="tipoCantidad"/>
+      <xs:element name="nata" type="tipoCantidad"/>
+    </xs:choice>
+    <xs:attribute name="fabricación" type="xs:date" use="required"/>
+  </xs:complexType>
+
+  <!-- Elemento helado -->
+  <xs:element name="helado" type="tipoHelado"/>
+
+  <!-- Elemento raíz -->
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="helado" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

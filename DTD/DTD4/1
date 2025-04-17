@@ -1,0 +1,14 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE numeros [
+  <!ELEMENT numeros (numero+)>
+  <!ELEMENT numero (#PCDATA)>
+]>
+<numeros>
+  <numero>25</numero>
+</numeros>

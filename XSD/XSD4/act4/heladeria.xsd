@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento fresa (vacío) -->
+  <xs:element name="fresa" type="xs:empty"/>
+
+  <!-- Elemento vainilla (vacío) -->
+  <xs:element name="vainilla" type="xs:empty"/>
+
+  <!-- Elemento chocolate (vacío) -->
+  <xs:element name="chocolate" type="xs:empty"/>
+
+  <!-- Tipo personalizado vacío -->
+  <xs:simpleType name="xs:empty">
+    <xs:restriction base="xs:string">
+      <xs:length value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo para helado: combinación de sabores válida -->
+  <xs:complexType name="tipoHelado">
+    <xs:choice>
+      <!-- Opción 1: fresa + chocolate -->
+      <xs:sequence>
+        <xs:element ref="fresa"/>
+        <xs:element ref="chocolate"/>
+      </xs:sequence>
+      <!-- Opción 2: vainilla + chocolate -->
+      <xs:sequence>
+        <xs:element ref="vainilla"/>
+        <xs:element ref="chocolate"/>
+      </xs:sequence>
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- Elemento helado -->
+  <xs:element name="helado" type="tipoHelado"/>
+
+  <!-- Elemento raíz -->
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="helado" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

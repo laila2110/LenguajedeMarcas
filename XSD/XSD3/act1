@@ -1,0 +1,24 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+1. Usando xs:pattern y xs:length:
+<xs:element name="clave">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:length value="10"/>
+      <xs:pattern value="[a-zA-Z0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+ Usando solo xs:pattern:
+ <xs:element name="clave">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>

@@ -1,0 +1,18 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 2
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letras [
+  <!ELEMENT letras (letra+)>
+  <!ELEMENT letra (#PCDATA)>
+]>
+<letras>
+  <letra>m</letra>
+  <letra>uve doble</letra>
+</letras>
+
+el error
+//<!ELEMENT letras (letra)>

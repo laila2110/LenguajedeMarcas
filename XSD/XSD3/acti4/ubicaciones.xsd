@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ubicaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ubicacion" type="infoUbicacion" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definición del simpleType 'direccion' -->
+  <xs:simpleType name="direccion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="norte"/>
+      <xs:enumeration value="sur"/>
+      <xs:enumeration value="este"/>
+      <xs:enumeration value="oeste"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del nuevo complexType 'infoUbicacion' -->
+  <xs:complexType name="infoUbicacion">
+    <xs:sequence>
+      <xs:element name="direccion" type="direccion"/>
+    </xs:sequence>
+    <xs:attribute name="metros" type="xs:decimal"/>
+  </xs:complexType>
+</xs:schema>

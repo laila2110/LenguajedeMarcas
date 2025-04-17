@@ -1,0 +1,23 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+ sin usar xs:pattern
+<xs:element name="respuesta">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="D"/>
+      <xs:enumeration value="E"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+-- En vez de escribiendo "[ABCDE]", ¿de qué otras formas se podría especificar la misma restricción?
+<xs:pattern value="A|B|C|D|E"/>
+o
+<xs:pattern value="[A-E]"/>

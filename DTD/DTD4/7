@@ -1,0 +1,24 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 7
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musicos [
+  <!ELEMENT musicos (musico*)>
+  <!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apodo (#PCDATA)>
+  <!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+<musicos>
+  <musico>
+    <nombre>Antonio Vivaldi</nombre>
+    <fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+  </musico>
+  <musico>
+    <apodo>El viejo peluca</apodo>
+    <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+  </musico>
+</musicos>

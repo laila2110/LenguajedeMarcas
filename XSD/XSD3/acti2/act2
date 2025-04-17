@@ -1,0 +1,18 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 2
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="fichas.xsd">
+ <ficha>
+ <nombre>Ana Sanz Tin</nombre>
+ <clave>G8w2</clave>
+ </ficha>
+ <ficha>
+ <nombre>Iker Rubio Mol</nombre>
+ <clave>ag32Ue7AFF</clave>
+ </ficha>
+</fichas>

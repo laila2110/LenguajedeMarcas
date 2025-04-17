@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE marcadores SYSTEM "marcadores.dtd" [
+<!ELEMENT marcadores (pagina)*>
+<!ELEMENT pagina (nombre, descripcion, url)>
+]>
+<marcadores>
+<pagina>
+<nombre>Google</nombre>
+<descripcion>Buscador.</descripcion>
+<url>https://www.google.es/</url>
+</pagina>
+<pagina>
+<nombre>Instagram</nombre>
+<descripcion>Conecta con tus amigos.</descripcion>
+<url>https://www.instagram.com/</url>
+</pagina>
+<pagina>
+<nombre>W3C</nombre>
+<descripcion>World Wide Web Consortium.</descripcion>
+<url>http://www.w3.org/</url>
+</pagina>
+</marcadores>

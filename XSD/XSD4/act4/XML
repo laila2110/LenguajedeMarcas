@@ -1,0 +1,18 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 4
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<heladeria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="heladeria.xsd">
+ <helado>
+ <fresa />
+ <chocolate />
+ </helado>
+ <helado>
+ <vainilla />
+ <chocolate />
+ </helado>
+</heladeria>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <pelicula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="esquema.xsd">
+
+<titulo>El Diario de Noah</titulo>
+  <autor>Nicholas Sparks</autor>
+  <anio>2004</anio>
+  <genero>Cine Romantico</genero>
+  <genero>Melodrama</genero>
+ </pelicula>

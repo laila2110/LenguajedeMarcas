@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Tipo para el atributo DNI: 8 dígitos y una letra mayúscula -->
+  <xs:simpleType name="tipoDNI">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo para el elemento número: entero entre 0 y 500 -->
+  <xs:simpleType name="tipoNumero">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del elemento principal 'alumno' -->
+  <xs:element name="alumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="direccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="calle" type="xs:string"/>
+              <xs:element name="numero" type="tipoNumero"/>
+              <xs:element name="ciudad" type="xs:string"/>
+              <xs:element name="provincia" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/>
+      </xs:sequence>
+      <xs:attribute name="dni" type="tipoDNI" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

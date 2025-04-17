@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+<!ELEMENT deportistas (futbol | f1 | tenis)*>
+<!ELEMENT futbol (#PCDATA)>
+<!ELEMENT futbol (#PCDATA)>
+<!ATTLIST futbol pais CDATA "Portugal">
+<!ATTLIST futbol fecha_de_nacimiento CDATA
+#IMPLIED>
+<!ATTLIST futbol equipo CDATA #REQUIRED>
+<!ELEMENT futbol (#PCDATA)>
+]>
+<deportistas>
+<futbol pais="Reino Unido"
+fecha_de_nacimiento="03/07/1987"
+equipo="<Arsenal>">Declan Rice</futbol>
+<futbol equipo="Seleccion de Portugal">Cristiano Ronaldo</futbol>
+<futbol>Leonel Messi</futbol>
+</deportistas>
