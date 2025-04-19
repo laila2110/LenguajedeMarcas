@@ -1,0 +1,25 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 1
+-->
+problema: <!ELEMENT favoritos (marcador)> <!-- ❌ Incorrecto -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marcadores [
+  <!ELEMENT marcadores (marcador+)>
+  <!ELEMENT marcador (nombre, uri)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT uri (#PCDATA)>
+]>
+<marcadores>
+  <marcador>
+    <nombre>W3C</nombre>
+    <uri>http://www.w3.org/</uri>
+  </marcador>
+  <marcador>
+    <nombre>Web Hypertext Application Technology Working Group (WHATWG)</nombre>
+    <uri>http://www.whatwg.org/</uri>
+  </marcador>
+</marcadores>

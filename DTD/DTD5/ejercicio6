@@ -1,0 +1,29 @@
+<!--
+Nombre: Laila Belhachmi Ouaissa
+Curso: DAW1
+Fecha: 17/03/2025
+Ejercicio: Ejercicio 6
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+  <!ELEMENT paises (pais*)>
+  <!ELEMENT pais (nombre, unionEuropea?, otan?)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT unionEuropea (#PCDATA)>
+  <!ELEMENT otan (#PCDATA)>
+]>
+<paises>
+  <pais>
+    <nombre>España</nombre>
+    <unionEuropea>sí</unionEuropea>
+    <otan>sí</otan>
+  </pais>
+  <pais>
+    <nombre>Noruega</nombre>
+    <otan>sí</otan>
+  </pais>
+  <pais>
+    <nombre>Austria</nombre>
+    <unionEuropea>sí</unionEuropea>
+  </pais>
+</paises>
